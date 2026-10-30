@@ -1,0 +1,122 @@
+[
+  {
+    "id": "audio-01",
+    "name": "Studio Wireless Headphones",
+    "category": "Audio",
+    "price": 3499,
+    "rating": 4.8,
+    "description": "Balanced sound and soft cushions for long listening sessions.",
+    "icon": "🎧",
+    "badge": "BESTSELLER"
+  },
+  {
+    "id": "desk-01",
+    "name": "Arc Desk Lamp",
+    "category": "Workspace",
+    "price": 2199,
+    "rating": 4.6,
+    "description": "Warm, focused light with a clean silhouette.",
+    "icon": "💡",
+    "badge": "GOOD LIGHT"
+  },
+  {
+    "id": "accessory-01",
+    "name": "Everyday Canvas Tote",
+    "category": "Accessories",
+    "price": 799,
+    "rating": 4.5,
+    "description": "A sturdy carry-all for errands, books, and daily essentials.",
+    "icon": "👜",
+    "badge": "EVERYDAY"
+  },
+  {
+    "id": "home-01",
+    "name": "Stoneware Coffee Mug",
+    "category": "Home",
+    "price": 499,
+    "rating": 4.7,
+    "description": "A textured ceramic mug made for slow mornings.",
+    "icon": "☕",
+    "badge": "SMALL JOY"
+  },
+  {
+    "id": "workspace-02",
+    "name": "Mechanical Keyboard",
+    "category": "Workspace",
+    "price": 4299,
+    "rating": 4.9,
+    "description": "Tactile keys and a compact layout for your desk setup.",
+    "icon": "⌨️",
+    "badge": "TOP RATED"
+  },
+  {
+    "id": "audio-02",
+    "name": "Pocket Bluetooth Speaker",
+    "category": "Audio",
+    "price": 1799,
+    "rating": 4.4,
+    "description": "Portable sound for your kitchen, balcony, or next trip.",
+    "icon": "🔊",
+    "badge": "ON THE GO"
+  },
+  {
+    "id": "accessory-02",
+    "name": "Minimal Leather Wallet",
+    "category": "Accessories",
+    "price": 1299,
+    "rating": 4.3,
+    "description": "A slim profile that keeps your daily essentials in order.",
+    "icon": "👛",
+    "badge": "MINIMAL"
+  },
+  {
+    "id": "home-02",
+    "name": "Cotton Throw Blanket",
+    "category": "Home",
+    "price": 1899,
+    "rating": 4.6,
+    "description": "A breathable layer for the sofa, reading chair, or bed.",
+    "icon": "🧶",
+    "badge": "SOFT LIVING"
+  },
+  {
+    "id": "workspace-03",
+    "name": "Aluminium Laptop Stand",
+    "category": "Workspace",
+    "price": 1599,
+    "rating": 4.7,
+    "description": "Raise your screen and make a little more room on your desk.",
+    "icon": "💻",
+    "badge": "DESK FAVORITE"
+  },
+  {
+    "id": "accessory-03",
+    "name": "Insulated Travel Bottle",
+    "category": "Accessories",
+    "price": 999,
+    "rating": 4.2,
+    "description": "A reusable bottle that keeps drinks at a comfortable temperature.",
+    "icon": "🧴",
+    "badge": "REFILL OFTEN"
+  },
+  {
+    "id": "home-03",
+    "name": "Compact Plant Pot",
+    "category": "Home",
+    "price": 349,
+    "rating": 4.1,
+    "description": "A simple ceramic home for a small plant or fresh cutting.",
+    "icon": "🪴",
+    "badge": "FRESH START"
+  },
+  {
+    "id": "audio-03",
+    "name": "Wired In-Ear Earphones",
+    "category": "Audio",
+    "price": 599,
+    "rating": 4.0,
+    "description": "Lightweight everyday earphones with a reliable wired connection.",
+    "icon": "🎵",
+    "badge": "EASY LISTENING"
+  }
+]

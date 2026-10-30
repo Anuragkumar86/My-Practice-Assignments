@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A product explorer front-end coding assessment.">
+  <title>Northstar Supply — Product Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Northstar Supply home">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>northstar<span class="brand-light"> supply</span></span>
+    </a>
+    <div class="header-note"><span class="status-dot" aria-hidden="true"></span>Thoughtful things for everyday life</div>
+    <div class="header-cart" aria-label="Shopping cart item count">
+      <span class="cart-symbol" aria-hidden="true">▣</span>
+      <span>Cart</span>
+      <span id="cartCount" class="cart-count">0</span>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="pageTitle">
+      <p class="eyebrow">THE EVERYDAY EDIT</p>
+      <h1 id="pageTitle">Find something <em>good.</em></h1>
+      <p class="hero-copy">Useful upgrades for your desk, your home, and wherever the day takes you.</p>
+    </section>
+
+    <section class="toolbar" aria-label="Product search and filters">
+      <label class="search-box" for="searchInput">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search products…" autocomplete="off">
+      </label>
+      <label class="select-label" for="categoryFilter">
+        <span>Category</span>
+        <select id="categoryFilter">
+          <option value="all">All categories</option>
+          <option value="Audio">Audio</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Workspace">Workspace</option>
+          <option value="Home">Home</option>
+        </select>
+      </label>
+      <label class="select-label sort-label" for="sortSelect">
+        <span>Sort by</span>
+        <select id="sortSelect">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="results-bar">
+      <p id="resultCount" class="result-count">Products</p>
+      <p class="results-note">Designed to be used, made to last.</p>
+    </div>
+
+    <div class="content-layout">
+      <section class="catalog" aria-label="Product results">
+        <div id="loadingState" class="state-panel">
+          <span class="loader" aria-hidden="true"></span>
+          <p>Getting the good stuff ready…</p>
+        </div>
+
+        <div id="errorState" class="state-panel hidden" role="alert">
+          <span class="state-icon" aria-hidden="true">!</span>
+          <h2>We couldn't load the products</h2>
+          <p>Please check the local server and try again.</p>
+          <button id="retryBtn" class="button button-dark" type="button">Try again</button>
+        </div>
+
+        <div id="emptyState" class="state-panel hidden">
+          <span class="state-icon" aria-hidden="true">⌕</span>
+          <h2>No products found</h2>
+          <p>Try another search or clear your filters.</p>
+          <button id="clearFiltersBtn" class="button button-dark" type="button">Clear filters</button>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="cart-panel" aria-labelledby="cartTitle">
+        <div class="cart-panel-heading">
+          <div>
+            <p class="eyebrow">YOUR PICKS</p>
+            <h2 id="cartTitle">Your cart <span id="cartLineCount" class="cart-line-count">(0)</span></h2>
+          </div>
+          <span class="bag-icon" aria-hidden="true">▱</span>
+        </div>
+        <div id="cartEmpty" class="cart-empty">
+          <span class="empty-bag" aria-hidden="true">▱</span>
+          <p>Your cart is taking a little break.</p>
+          <span>Add something you love.</span>
+        </div>
+        <div id="cartContent" class="hidden">
+          <div id="cartItems" 
+          class="cart-items">
+          <!-- <p>hello from </p> -->
+        </div>
+          <div class="cart-footer">
+            <div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">₹0.00</strong></div>
+            <p class="shipping-note">Shipping and taxes calculated at checkout.</p>
+            <button id="clearCartBtn" class="clear-cart-button" type="button">Clear cart</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="page-footer"><span>Northstar Supply</span><span>Small details. Better days.</span></footer>
+  </main>
+
+</body>
+</html>
