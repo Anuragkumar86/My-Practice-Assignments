@@ -1,0 +1,25 @@
+<ul id="task-list">
+  <li>Buy Milk</li>
+  <li>Learn JavaScript</li>
+  <li>Build a project</li>
+</ul>
+
+<script>
+  const taskList = document.querySelector('#task-list');
+
+  // Attach ONE listener to the parent container
+  taskList.addEventListener('click', (event) => {
+    // Check if the clicked element is actually a list item (LI)
+    if (event.target.tagName === 'LI') {
+      console.log("Task clicked:", event.target.textContent);
+      
+      // Example: Remove the clicked item
+      event.target.remove();
+    }
+  });
+
+  // Even if a new item is added later, it will work instantly!
+  const newItem = document.createElement('li');
+  newItem.textContent = 'Master Event Delegation';
+  taskList.appendChild(newItem);
+</script>
